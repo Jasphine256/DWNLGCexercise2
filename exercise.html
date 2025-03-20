@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DAWN LGC - Online Computer Shop</title>
+  <style>
+    :root {
+      --primary: #4f46e5;
+      --background: #f9fafb;
+      --text: #1f2937;
+      --accent: #e0e7ff;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--primary);
+      color: white;
+      padding: 1.5rem 1rem;
+      text-align: center;
+    }
+
+    nav {
+      background-color: var(--accent);
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      font-size: 1.1rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    ul, ol {
+      padding-left: 1.5rem;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    input, select, textarea, button {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: var(--primary);
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #4338ca;
+    }
+
+    footer {
+      background-color: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .products-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .product {
+      flex: 1 1 280px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .product img {
+      width: 100%;
+      max-width: 250px;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .product h3 {
+      margin: 0.5rem 0 0.2rem;
+    }
+
+    .product p {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #16a34a;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>DAWN LGC - Online Computer Shop</h1>
+  </header>
+
+  <nav>
+    <a href="#products">Products</a>
+    <a href="#features">Why Us</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="products">
+      <h2>Featured Products</h2>
+      <div class="products-container">
+        <div class="product">
+          <img src="https://m.media-amazon.com/images/I/61LtuGzXeaL._AC_SL1500_.jpg" alt="Wireless Mouse" />
+          <h3>ASUS ROG Gaming Laptop</h3>
+          <p>High-performance laptop with NVIDIA RTX 3060, 16GB RAM, and 1TB SSD.</p>
+          <p class="price">$1,499.00</p>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+          <img src="https://m.media-amazon.com/images/I/81Zt42ioCgL._AC_SL1500_.jpg" alt="Dell Monitor" />
+          <h3>Redragon K552 Mechanical Keyboard</h3>
+          <p>Durable RGB backlit keyboard with clicky switches and metal construction.</p>
+          <p class="price">$39.99</p>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+          <img src="https://m.media-amazon.com/images/I/61LtuGzXeaL._AC_SL1500_.jpg" alt="Wireless Mouse" />
+          <h3>Logitech MX Master 3S</h3>
+          <p>Advanced ergonomic mouse with ultra-fast scrolling and customizable buttons.</p>
+          <p class="price">$99.99</p>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+          <img src="https://m.media-amazon.com/images/I/81Zt42ioCgL._AC_SL1500_.jpg" alt="Dell Monitor" />
+          <h3>Dell 27" Full HD Monitor</h3>
+          <p>1080p IPS display with ultra-thin bezels and adjustable stand.</p>
+          <p class="price">$179.99</p>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+          <img src="https://m.media-amazon.com/images/I/61LtuGzXeaL._AC_SL1500_.jpg" alt="Wireless Mouse" />
+          <h3>SteelSeries Arctis 5 Headset</h3>
+          <p>ClearCast mic, surround sound, and RGB lighting for immersive gaming.</p>
+          <p class="price">$89.99</p>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+          <img src="https://m.media-amazon.com/images/I/81Zt42ioCgL._AC_SL1500_.jpg" alt="Dell Monitor" />
+          <h3>Samsung T7 Portable SSD 1TB</h3>
+          <p>Blazing fast data transfer speeds in a compact aluminum body.</p>
+          <p class="price">$119.99</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <h2>Why Shop With Us?</h2>
+      <ul>
+        <li>Free shipping on orders over $50</li>
+        <li>24/7 Customer Support</li>
+        <li>Trusted by thousands of customers</li>
+        <li>Genuine products with manufacturer warranty</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" />
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 DawnLegacy. All rights reserved.
+  </footer>
+</body>
+</html>
